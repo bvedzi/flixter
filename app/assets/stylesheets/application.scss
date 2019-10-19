@@ -1,24 +1,6 @@
-@import "bootstrap";
-
-
-.navbar {
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  color: #759561;
-}
-
-.navbar-inverse .navbar-brand {
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 100;
-  color: #759561;
-}
-
-.hero {
-  background: image_url('hero.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 370px;
-}
+ /*
+ *= require_tree .
+ *= require_self
+ *= require jquery-ui
+ *= require font-awesome
+ */
