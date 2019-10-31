@@ -34,3 +34,6 @@
 AWS_ACCESS_KEY: "AKIAQLFJI6N7GXF4F25Y"
 AWS_SECRET_KEY: "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"
 AWS_BUCKET: "flixterbrian"
+
+# Ignore application configuration
+/config/application.yml
