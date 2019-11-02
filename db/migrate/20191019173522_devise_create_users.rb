@@ -1,4 +1,4 @@
-20191019173522_devise_create_users.rb
+# 20191019173522_devise_create_users.rb
 # frozen_string_literal: true
 
 class DeviseCreateUsers < ActiveRecord::Migration[5.2]
