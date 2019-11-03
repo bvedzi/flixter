@@ -2,15 +2,13 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   <%= image_tag current_course.image.to_s, class: 'img-fluid' %>
-  <br />
+  <br /><br />
   <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class="clr" />
 
   <div class="text-center">
     <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-lg' %>
   </div>
-
-
   <ul>
     <% current_course.sections.each do |section| %>
     <li>
@@ -40,15 +38,19 @@
 <% if current_user && current_user == @course.user %>
 <br />
 <br />
-<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-sm float-right' %>
+<%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-sm float-right text-center' %>
 <%end%>
-<div class="col-sm-8 col-12">
+<br />
+<br />
+<div class="booyah-box col-10 offset-1 text-center">
   <%= @course.description %>
-</div>
+
 
   <% @course.sections.each do |section| %>
   <div class="section">
     <%= section.title %>
+    <br />
+<br />
     <% section.lessons.each do |lesson| %>
     <div class="lesson">
       <%= link_to lesson_path(lesson) do %>
@@ -57,6 +59,7 @@
       <%= lesson.subtitle %>
       <% end %>
       <% end %>
+      </div>
     </div>
   </div>
 <% end %>
